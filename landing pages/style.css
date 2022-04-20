@@ -1,0 +1,303 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    height: 80px;
+    margin: 30px 20px;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    float: center;
+    padding-top: 10px;
+    /* justify-content: center; */
+}
+
+.table {
+    background-color: aliceblue;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+    position: relative;
+    float: center;
+}
+
+a:after {
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    color: black;
+    background-color: #5243C0;
+    transition: width 0.4s ease-in, left 0.4s ease-in;
+    width: 0;
+    bottom: 0;
+}
+
+a:hover {
+    color: black;
+}
+
+a:hover::after {
+    width: 100%;
+    left: 0;
+    color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 800px;
+    align-items: center;
+}
+
+.image {
+    max-width: 800px;
+    height: auto;
+}
+
+.your_account_btn {
+    display: inline-block;
+    color: #FFD8DB;
+    height: 54px;
+    width: 114px;
+    border-radius: 22px;
+    padding: 5px 5px;
+    border: 1px solid #5243C0;
+    float: right;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.your_account_btn:hover {
+    background-color: #FFD8DB;
+    color: #5243C0;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.right {
+    display: flex;
+    float: right;
+}
+
+.left h1 {
+    display: flex;
+    font-size: 600%;
+    font-style: arial;
+    display: block;
+}
+
+td {
+    margin: 1px;
+    padding: 4px;
+}
+
+span {
+    font-size: 20px;
+    align-items: center;
+    display: inline-flex;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: violet;
+    position: relative;
+    top: 20px;
+    left: 26px;
+    display: inline-block;
+}
+
+.grp {
+    padding-left: 20px;
+    height: 60px;
+    width: 2800px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: inline;
+    margin-bottom: 20px;
+}
+
+.btn2 {
+    font-weight: 100;
+    border-radius: 25px;
+    background-color: #5243C0;
+    color: #ffffff;
+    height: 60px;
+    width: 180px;
+    /* padding: 10px 10px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.arrow-down {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.arrow-up {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.tick {
+    height: 20px;
+    width: 35px;
+    background-image: url(./img/tick-gray.png);
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    padding: 4px 4px;
+    align: center;
+}
+
+tr {
+    padding: 20px 20px;
+}
+
+.tick:hover {
+    background-image: url(./img/tick-blue.png);
+    background-repeat: no-repeat;
+    /* width: 31px;
+    height: 31px;
+    padding: 1em; */
+}
+
+.pink {
+    height: 10px;
+    width: 25px;
+    background-color: pink;
+    border-radius: 5px;
+}
+
+.red {
+    height: 10px;
+    width: 25px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.green {
+    height: 10px;
+    width: 25px;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.yellow {
+    height: 10px;
+    width: 25px;
+    background-color: rgb(241, 193, 91);
+    border-radius: 5px;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+}
+
+.row1 tr:hover {
+    background-color: bisque;
+    font-size: 30px;
+    font-weight: bold;
+    color: yellow;
+    box-shadow: 2px 2px 2px 5px;
+}
+
+tr:hover {
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 3px gray;
+    margin: 20px 20px;
+    padding: 20px 20px;
+}
+
+.main_container {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    /* flex-direction: column; */
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    display: inline;
+    padding-left: 50px;
+    margin-left: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+}
+
+.row1:hover {
+    background-color: bisque;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px 5px blue;
+}
+
+.row1>tick::hover {
+    background-color: bisque;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px 5px blue;
+}
+
+.your_account_btn {
+    align-items: center;
+    font-weight: 700;
+    border-radius: 30px;
+    height: 60px;
+    width: 120px;
+    background-color: #FFD8DB;
+    color: #A389CC;
+    padding-top: 20px;
+}
+
+.your_account_btn:hover {
+    color: black;
+    opacity: 0.5;
+    /* background-color: white; */
+}
+
+.logo img {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 60px;
+    width: 140px;
+    display: inline;
+}
+
+
+/* .tick img:hover {
+        background-image: url(./img/tick-blue.png);
+        background-repeat: no-repeat;
+    }
+     */
